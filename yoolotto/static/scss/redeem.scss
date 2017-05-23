@@ -1,0 +1,137 @@
+html {
+    background: #FFF;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 300px;
+    background: #FFF;
+    
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 14px;
+}
+
+.blankout {
+    display: none;
+
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   background: rgba(255, 255, 255, .85);
+   z-index: 100;
+   text-align: center;
+   font-size: 1.8em;
+   font-weight: bold;
+   
+   .padding {
+        height: 40%; 
+   }
+}
+
+#redeem {
+    height: 390px;
+    overflow: hidden;
+    position: relative;
+
+    .header {
+        position: relative;
+        height: 20px;
+    
+        .redeemed {
+            background: #e20033;
+            height: 20px;
+        }
+        
+        .available {
+            background: #880b25;
+            width: 100%;
+            height: 20px;
+        }
+        
+        .text {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 300px;
+            line-height: 20px;
+            text-align:center;
+            font-weight: bold;
+            font-size: 0.85em;
+            color: #FFF;
+        }
+    }
+    
+    .inner {
+        padding: 20px;
+        width: 260px;
+        
+        .days {
+            font-size: 1.1em;
+            color: #666;
+        }
+        
+        .timer {
+            height: 30px;
+            width: 100px;
+            text-align: center;
+            font-size: 1.4em;
+            line-height: 30px;
+            
+            background: rgb(200, 200, 200);
+            background: -moz-linear-gradient(90deg, rgb(200, 200, 200) 30%, rgb(240, 240, 240) 70%);
+            background: -webkit-linear-gradient(90deg, rgb(200, 200, 200) 30%, rgb(240, 240, 240) 70%);
+            background: -o-linear-gradient(90deg, rgb(200, 200, 200) 30%, rgb(240, 240, 240) 70%);
+            background: -ms-linear-gradient(90deg, rgb(200, 200, 200) 30%, rgb(240, 240, 240) 70%);
+            background: linear-gradient(180deg, rgb(200, 200, 200) 30%, rgb(240, 240, 240) 70%);
+            
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+
+            border: 2px #CCC solid;
+            
+            &.warning {
+                background: red !important;
+                color: #FFF !important;
+            }
+
+        }
+        
+        .title {
+            margin: 10px 10px 10px 0px;
+            
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #288b4f;
+        }
+        
+        .background {
+            float: right;
+            
+            display: block;
+            width: 75px;
+            height: 157px;
+            margin-top: -25px;
+            margin-right: -10px;
+            
+        }
+        
+        .upc {
+            display: block;
+            width: 228px;
+            height: 81px;
+            margin: 20px auto 10px auto;
+        }
+        
+        .disclaimer {
+            margin-top: 10px;
+            font-size: 0.7em;
+            color: #999;
+        }
+        
+        .clear {
+            clear: both;
+        }
+    }
+}

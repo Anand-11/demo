@@ -1,0 +1,11 @@
+<html>
+<head>
+</head>
+<body>
+<h1>Fill Details</h1>
+    <form method="POST" class="post-form" action="/dashboard/googleform/">{% csrf_token %}
+        {{ form.as_p}}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+</body>
+</head>

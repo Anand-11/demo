@@ -1,0 +1,10 @@
+def update_total_reset_coins(email,coins):
+    email= email
+    coins =coins
+    email_info = EmailCoins.objects.get(email= email) 
+    print "previous coins",email_info.coins   
+    email_info.coins = float(coins)
+    dollar_amount = float(coins)/100
+    email_info.dollar_amount = dollar_amount
+    email_info.save()
+    print "after coins",email_info.coins

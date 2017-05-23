@@ -1,0 +1,19 @@
+<html>
+<head>
+</head>
+<body>
+<h1>Fill Details</h1>
+    <form method="POST" class="post-form" action="/dashboard/">{% csrf_token %}
+        {{ form.as_p}}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+    <form action="/dashboard/daily_report/" method="GET">
+    	<!-- <a href="/dashboard/calculate/">Calculate</a> -->
+    	Enter Date:<input type="text" name="date" required >
+    	<button type="submit" class="save btn btn-default">Get Daily Report</button>
+    </form>
+    <form action="/dashboard/monthly_report/" method="POST">
+    	<button type="submit" class="save btn btn-default">Get Monthly Report</button>
+    </form>
+</body>
+</head>

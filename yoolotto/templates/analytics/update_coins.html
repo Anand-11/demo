@@ -1,0 +1,21 @@
+{% extends 'admin/base_site.html' %}
+{% block title %}Yoolotto | Analytics{% endblock %}
+{% block content %}
+{% block extrahead %}
+<style type="text/css">
+    form label {display:block;width:250px;font-weight:bold;float:left;}
+    form textarea {width:900px;}
+    form p {clear:both;}
+    form ul {float:left;}
+    form li {list-style-type: none;clear:left;}
+</style>
+{% endblock %}
+
+<div>
+	<form method="POST" action="">
+		<div>{{form_data.as_p}}</div>		
+		<input type="submit" value="Add"  name="submit" />
+	</form>
+</div>
+{% endblock %}
+
